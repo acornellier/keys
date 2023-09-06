@@ -1,13 +1,14 @@
-import "./globals.css"
-import React from "react"
-import Head from "next/head"
-import { Inter } from "next/font/google"
-import "./globals.css"
-import styles from "./page.module.css"
+import './globals.css'
+import Head from 'next/head'
+import { Inter } from 'next/font/google'
+import './globals.css'
+import styles from './page.module.css'
+import { ReactNode } from 'react'
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ['latin'] })
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
+  console.warn('RootLayout')
   return (
     <html lang="en">
       <Head>

@@ -1,7 +1,12 @@
-"use client"
+import { Map } from '@/components/map'
 
-import React from "react"
+const isServer = typeof window === 'undefined'
 
 export default function Home() {
-  return <div>123123</div>
+  console.warn(`Home isServer: ${isServer}`)
+  return (
+    <div>
+      <Map />
+    </div>
+  )
 }
